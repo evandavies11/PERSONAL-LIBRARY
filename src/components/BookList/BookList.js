@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCard from './BookCard'
+import BookCard from "../BookCard/BookCard"
 
 const BookList = (props) => {
     return (
@@ -12,6 +12,8 @@ const BookList = (props) => {
                         title={book.volumeInfo.title}
                         Author={book.volumeInfo.authors}
                         published={book.volumeInfo.publishedDate}
+                        description={book.volumeInfo.description}
+                        link={book.volumeInfo.link}
                     />
                 })
             }
